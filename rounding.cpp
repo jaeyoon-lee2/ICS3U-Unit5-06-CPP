@@ -11,7 +11,7 @@
 void Rounding(float &decimal, int digit) {
     decimal = decimal * pow(10, digit);
     decimal = decimal + 0.5;
-    decimal = <int>(decimal);
+    decimal = int(decimal);
     decimal = decimal / pow(10, digit);
 }
 
